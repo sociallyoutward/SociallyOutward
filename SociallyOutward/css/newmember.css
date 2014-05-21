@@ -1,0 +1,161 @@
+	html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body
+{
+border-radius: 40px;
+background-color: black;
+padding:10px;
+overflow-x: hidden; 
+}
+
+#inner
+{
+	width:150%;
+	height:100%;
+	background-color: white;
+	border-radius: 40px;
+	position:relative;
+}
+
+@font-face
+{
+font-family: 'sp';
+src: url('segoeprint.ttf');
+} 
+
+.ls {
+	font-family: "Lucida sans";
+	font-style:italic;
+}
+
+.sp {
+	font-family: 'sp';
+	font-style:italic;
+}
+
+#gradient{
+	z-index: 4;
+	position:absolute;
+	top:0;
+	left:50%;
+	width:50%;
+	height:100%;
+	background: -moz-linear-gradient(left,  rgba(0,0,0,0) 8%, rgba(0,0,0,0.43) 31%, rgba(0,0,0,1) 61%, rgba(0,0,0,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(8%,rgba(0,0,0,0)), color-stop(31%,rgba(0,0,0,0.43)), color-stop(61%,rgba(0,0,0,1)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  rgba(0,0,0,0) 8%,rgba(0,0,0,0.43) 31%,rgba(0,0,0,1) 61%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  rgba(0,0,0,0) 8%,rgba(0,0,0,0.43) 31%,rgba(0,0,0,1) 61%,rgba(0,0,0,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  rgba(0,0,0,0) 8%,rgba(0,0,0,0.43) 31%,rgba(0,0,0,1) 61%,rgba(0,0,0,1) 100%); /* IE10+ */
+	background: linear-gradient(to right,  rgba(0,0,0,0) 8%,rgba(0,0,0,0.43) 31%,rgba(0,0,0,1) 61%,rgba(0,0,0,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=1 ); /* IE6-9 */
+
+
+
+}
+
+.name{
+	font-size: 3em;
+}
+.tplogo{
+	margin-left: 40px;
+}
+
+#logopic{
+	margin-top: 1%;
+	width:25%;
+}
+#lText{
+	padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 390px;
+}
+
+.linput{
+	font-size: 1.2em;
+	margin-right:1%;
+	margin-top:.4%;
+	margin-bottom:.4%;
+	border: solid black 1px;
+	padding-top:.2%;
+	padding-bottom: .2%;
+	background-color: #DAE3E2;
+
+}
+
+.linputSmall{
+	width:10%;
+}
+
+.linputLarge{
+	width:21%;
+}
+
+#creation_form{
+	margin-left:6%;
+}
+
+.bday{
+	font-family: "Lucida sans";
+	font-size: 1.2em;
+}
+
+.sel{
+	width:7%;
+	margin-top:.25%;
+}
+#vertdiv{
+	width:0px;
+	height:60%;
+	position: absolute;
+	top:20%;
+	left:33.3%;
+	border:thin black solid;
+	z-index:5;
+}
+#submitButton{
+	margin-top: 1%;
+	width:15%;
+}
+#recaptcha_widget_div{
+	margin-top: 1%;
+	position:relative;
+	left:-5px;
+
+}
+#otherLogo{
+	position: absolute;
+	left:85%;
+	top:80%;
+	width:12%;
+	color: white;
+	z-index: 7;
+
+
+}
+#olImage{
+	width:40%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}

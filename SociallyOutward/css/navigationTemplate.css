@@ -1,0 +1,132 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+#profPic{
+	width: 170px;
+	padding-bottom:10px;
+}
+
+.tNav{
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+    font-family:"Lucida Sans";
+    font-size: 1.5em;
+}
+
+.tNav .mid{
+	border-right: solid thin black;
+}
+
+.tNav li{
+    display:inline;
+}
+.tNav a{
+    display:inline-block;
+    padding:10px;
+}
+
+.tNav a:link,.sNav a:link {
+	color:black;
+	text-decoration:none;
+}
+
+.tNav a:visited,.sNav a:visited {
+	color:black;
+	text-decoration:none;
+}
+
+.tNav a:hover {
+	color:#80B3FF;
+	text-decoration:none;
+} 
+
+.tNav a:active,.sNav a:active {
+	color:black;
+	text-decoration:none;
+}
+
+.sNav{
+	/*float: left;*/
+	position: absolute;
+	top:20%;
+	width: 18%;
+	background-color: #80B3FF;
+	border-top-right-radius: 30px;
+	border-bottom-right-radius: 30px;
+}
+#sNav-inner{
+	width: 180px;
+	float: left;
+}
+
+.sNav ul{
+	list-style-type:none;
+	padding:0;
+	margin:0;
+	font-family:"Lucida Sans";
+	font-size: 1.2em;
+}
+
+.spaceUnder{
+	margin-bottom:10px;
+	border-bottom: solid black thin;
+}
+
+#name{
+	font-family:"Lucida Sans";
+	font-size: 1.2em;
+	border-bottom: thin solid black;
+	margin-bottom: 10px;
+
+}
+
+#content{
+	float:left;
+	width:100%;
+}
+
+.arrow {
+	width:25px;
+	height:200px;
+	margin-left:10px;
+	position: relative;
+	top:100px;
+}
+
+.pushover, .po li{
+	margin-left:10px;
+}
+
+#mpl{
+	position: absolute;
+	left:10px;
+	top:10px;
+}
+#googlemap{
+	margin-left: auto;
+	margin-right: auto;
+}
+#interestList{
+	text-align: center;
+}
+
