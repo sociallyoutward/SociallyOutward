@@ -1,10 +1,12 @@
 <?php
   
+  ob_start();
 
   $userid = $_GET['userid'];
   $stayLoggedIn = $_GET['stayLoggedIn'];
   $userInfo = array();
   $userInfo['id'] = $userid;
+  print_r($stayLoggedIn);
   
   if($stayLoggedIn=="true")
   {

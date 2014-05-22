@@ -12,7 +12,6 @@ class Member
 		$mysqli = new mysqli("localhost", "socia150", "socially2013!", "socia150_sodb");
 		
 
-		//checks if username taken
 		if ($stmt = $mysqli->prepare("SELECT first FROM Member WHERE username=?")) {
 
 			// Bind a variable to the parameter as a string. 

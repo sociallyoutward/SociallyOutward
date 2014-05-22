@@ -1,4 +1,5 @@
 <?php
+ob_start();
 if(!isset($_COOKIE['user']))
 {
 header( 'Location: http://www.sociallyoutward.com' ) ;

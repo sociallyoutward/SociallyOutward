@@ -23,14 +23,13 @@ function init(){
 	createjs.Ticker.addListener(window);
 	createjs.Ticker.addEventListener("tick", ticktate);
 	bubbleCalc(currBubbles,radius,currText);
-	resizeCanvas();
 	$(window).resize(resizeCanvas);
 }
 
 var ticktate = function()
 {
 	
-	for(var x=0;x<bubbleContainer.getNumChildren();x++)
+	for(var x=1;x<bubbleContainer.getNumChildren();x++)
 	{	
 	bubbleContainer.getChildAt(x).rotation-= speed;
 	}

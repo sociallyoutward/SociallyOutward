@@ -25,5 +25,5 @@ var toggleGuide = function(i,c,o)
 var changeRadius = function(newRadius)
 {
 	radius = canvas.height*newRadius;
-	bubbleCalc(currBubbles,radius,currText);
+	bubbleCalc(currBubbles,radius);
 }

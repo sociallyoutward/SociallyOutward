@@ -32,19 +32,12 @@ var loginCookie = function(data, stayLoggedIn){
 	 });
 }
 
-var firstTimeU = true;
-var firstTimeP = true;
-var clearField = function(ftc,up)
+var firstTime = true;
+var clearField = function(ftc)
 {
-	if((up==0)&&firstTimeU)
+	if(firstTime)
 	{
 	$(ftc).val("");
-	firstTimeU = false;
+	firstTime = false;
 	}
-	if((up==1)&&firstTimeP)
-	{
-	$(ftc).val("");
-	firstTimeP = false;
-	}
-
 }

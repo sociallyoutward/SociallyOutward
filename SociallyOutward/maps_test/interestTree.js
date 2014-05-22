@@ -90,6 +90,7 @@ var onoff = function(interestID)
 				onMap[interestID][i].setMap(null);
 			}
 		}
+		console.log(onMap[interestID]);
 		}
 		else if(onMap[interestID][0]==false)
 		{

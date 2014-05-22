@@ -14,7 +14,7 @@ header( 'Location: http://www.sociallyoutward.com' ) ;
 <form action="/php/members.php" method="POST">
 
 <?php
-  require_once('php/recaptchalib.php');
+  require_once('recaptchalib.php');
   $publickey = "6LfltOESAAAAAA1VsTe2rUtdbBCYGsYtNeIXGIEc";
   echo recaptcha_get_html($publickey);
 ?>

@@ -9,7 +9,7 @@ require 'fbconfig.php';   // Include fbconfig.php file
  </head>
   <body>
   <?php if ($user): ?>      <!--  After user login  -->
-  <script>window.location.replace("http://sociallyoutward.com/memberProfile.php");</script>
+  <script>window.location.replace("http://sociallyoutward.com/FB2/memberProfile.php");</script>
 <div class="container">
 <div class="hero-unit">
   <h1>Hello <?php echo $fbuname; ?></h1>
