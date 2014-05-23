@@ -1,7 +1,7 @@
 <?php
 
 include '../dbconfig.php'; 
-
+$posts;
 $postType = $_GET['postType'];
 
 $sql= "SELECT * FROM posts WHERE type='" . $postType . "'";
@@ -13,8 +13,8 @@ if($rs === false) {
 } else {
   
   while($row = $rs->fetch_assoc()){
-  	print_r($row);
-  	echo "<br><br>";
+  	$posts[$row['id']]= $row;
   }
+  print_r(json_encode($posts));
   
 }
