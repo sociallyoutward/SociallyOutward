@@ -1,6 +1,6 @@
-var createPosts = function(posts,tab){
+var createPosts = function(posts){
 	
-	var feed = tab;
+	var feed = $('#feed');
 
 	for(var p in posts)
 	{
