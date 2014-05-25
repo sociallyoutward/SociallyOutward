@@ -1,12 +1,11 @@
-var getPosts = function(postType,tab)
+var getPosts = function(postType)
 {
 	$.ajax('getPosts.php',
     	{
     		type: 'GET',
-    		tab:tab,
     		data:{postType:postType},
 			cache: false,
-			success: function (data) {createPosts(JSON.parse(data),this.tab);},
+			success: function (data) {createPosts(JSON.parse(data));},
 			error: function () {alert('Error');}
      	});
 }
