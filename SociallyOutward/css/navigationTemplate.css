@@ -98,9 +98,9 @@ time, mark, audio, video {
   padding-top: 80px;
   padding-left: 20px;
   overflow: hidden;
-  -webkit-transition: width 0.5s linear;
-  -moz-transition: width 0.5s linear;
-  transition: width 0.5s linear;
+  -webkit-transition: width 0.2s linear;
+  -moz-transition: width 0.2s linear;
+  transition: width 0.2s linear;
 }
 
 #toggleSide:hover { width: 240px; }
