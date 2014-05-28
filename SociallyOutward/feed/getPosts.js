@@ -4,9 +4,10 @@ var getPosts = function(postType,tab)
     	{
     		type: 'GET',
     		tab:tab,
+    		postType:postType,
     		data:{postType:postType},
 			cache: false,
-			success: function (data) {createPosts(JSON.parse(data),this.tab);},
-			error: function () {alert('Error');}
+			success: function (data) {createPosts(JSON.parse(data),this.tab,this.postType);},
+			error: function (e) {console.log(e);}
      	});
 }

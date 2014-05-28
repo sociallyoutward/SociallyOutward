@@ -1,0 +1,7 @@
+.item {
+    width: 290px;
+    float: left;
+    margin: 5px;
+    background: #CCC;
+    border-radius: 10px;
+}

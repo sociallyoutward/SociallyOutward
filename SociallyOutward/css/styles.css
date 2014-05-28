@@ -13,3 +13,7 @@ body{
 a:active,a:focus {
     outline: none;
 }
+
+.item {
+	width: 200px;
+}
