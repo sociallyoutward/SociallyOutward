@@ -122,7 +122,7 @@ time, mark, audio, video {
 }
 
 .navbar-default .navbar-nav>.open>a:focus{
-    background-color: #FFFFF0;
+    background-color: white;
 }
 
 .navbar-brand{
@@ -133,6 +133,10 @@ time, mark, audio, video {
 }
 
 .navbar-default .navbar-nav>li>a {
-    color: #FFFFF0;
+    color: white;
     font-weight: normal;
+}
 
+#contentAbsoluteNav{
+    left: 240px;
+}

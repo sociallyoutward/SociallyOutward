@@ -1,0 +1,28 @@
+
+/*  Friends and Neighbors Profile */
+
+.profileBox{
+    height: 230px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    border: solid 1px #ccc;
+}
+
+.boxContent{
+    height: 190px;
+    padding: 5px 5px 5px 5px;
+}
+
+.boxFooterFriend{
+    height: 40px;
+    background-color: #afe9c6;
+    padding: 10px 5px 5px 5px;
+    border-bottom: solid 1px #ccc;
+}
+
+.boxFooterNeighbor{
+    height: 40px;
+    background-color: #ffeeaa;
+    padding: 10px 5px 5px 5px;
+    border-bottom: solid 1px #ccc;
+}
