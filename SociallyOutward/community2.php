@@ -1,7 +1,7 @@
 <!--Add php back in-->
 <html>
 <head>
-    <title>SociallyOutward</title>
+    <title>Community</title>
     
     <!-- Bootstrap 3.1.1. Latest compiled and minified CSS -->
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
@@ -12,16 +12,20 @@
     <!-- Bootstrap 3.1.1 Latest compiled and minified JavaScript -->
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     
-    <!-- Favicon -->
+    <!--Favicon-->
     <link rel="icon" href="assets/logo.png">
     
+    <link href="css/memberProfile.css" type="text/css" rel="stylesheet">
+    <link href="css/navigationTemplate.css" type="text/css" rel="stylesheet">
     <script src=" http://code.createjs.com/createjs-2013.02.12.min.js"></script>
-    <script type="text/javascript" src='js/showMenu.js'></script>
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
     <script src="http://code.createjs.com/createjs-2013.02.12.min.js"></script>
-    <script src="/js/bubbles/dbinitialize2.js"></script>
-    <script src="/js/bubbles/resize.js"></script>
-    <script src="/js/bubbles/dbbubble.js"></script>
-    <script src="/js/clearInterests.js"></script>
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAvGfRfZeJAIYfrRoL9x3WvH1h0IFC7Zb8&libraries=places,geometry&sensor=false"></script>
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="maps_test/jtInitialize.js"></script>
+    <script src='maps_test/jsonParseTest.js'></script>
+    <script src='maps_test/interestTree.js'></script>
     <script src="/js/sideMenu.js"></script>
     
     <!-- Socially Outward Styles -->
@@ -88,6 +92,14 @@
 	    </div><!-- end toggleSide -->
 	    
 	    <div id='content' class="row">
+		<div id="googleMap" style="width:100%;height:380px;"></div>
+		    <div id="interestList">
+			<div id="div1"></div>
+			<div id="div2"></div>
+			<div id="div3"></div>
+			<div id="div4"></div>
+		    </div>
+		</div>
 	    </div><!-- end #content and end .row-->
 	    
 	    <div id='user' hidden='true'><?php  print_r($_COOKIE['user']); ?></div>
