@@ -3,13 +3,11 @@
 	margin-right: auto;
 	display: block;
 	width:500px;
-	/*border: thin solid black;*/
 }
 
 #navCanvas{
-	position: relative;
-	top:-500px;
 	float:right;
+	display: block;
 }
 
 #addInterestMenu{

@@ -1,7 +1,7 @@
 <!--Add php back in-->
 <html>
 <head>
-    <title>My Profile</title>
+    <title>SociallyOutward</title>
     
     <!-- Bootstrap 3.1.1. Latest compiled and minified CSS -->
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
@@ -16,7 +16,7 @@
     <link href="css/memberProfile.css" type="text/css" rel="stylesheet">
     <link href="css/navigationTemplate.css" type="text/css" rel="stylesheet">
     <link href="css/styles.css" type="text/css" rel="stylesheet">
-    
+	
     <link rel="icon" href="assets/logo.png">
     
     <script src=" http://code.createjs.com/createjs-2013.02.12.min.js"></script>
@@ -39,7 +39,7 @@
 		  <span class="sr-only">Toggle navigation</span>
 		  <span><img src="assets/toggle_down.png" height="15px"</span>
 		</button>
-		<a class="navbar-brand" href="#"><img src="assets/brand.png" height="45px" /></a>
+		<a class="navbar-brand" href="index.php"><img src="assets/brand.png" height="45px" /></a>
 	      </div>
 		
 	      <!-- Collect the nav links, forms, and other content for toggling -->
@@ -65,39 +65,7 @@
 	</nav>
 	
 	<div class="row">
-	    
-	    <!--Absolute Position on Md/Lg Screen-->
-	    <div id="absolute" class="hidden-xs">
-		<div class="col-xs=2">
-		    <img src="assets/toggle_empty.png" height="30px"/>
-		</div>
-		<div class="col-xs-10">
-		    <div id="sideNav side-Navigation" class="sNav">
-			<div id='sNav-inner'>
-			<p id='name' class='pushover'><?php echo $fbfullname; ?></p>
-			<img id='profpic' class='spaceUnder pushover' src="https://graph.facebook.com/<?php echo $user; ?>/picture?height=350&width=350">
-			<ul class='po'>
-			    <li class='spaceUnder'><a href='#'>Home</a></li>
-			    <li class='spaceUnder'><a href='#'>Messages</a></li>
-			    <li class='spaceUnder'><a href='#'>Settings</a></li>
-			    <li class='spaceUnder'><a href='chooseInterests.php'>Choose Interests</a></li>
-			    <li class='spaceUnder'><a href="<?php echo $logoutUrl; ?>">Logout</a></li>
-			</ul>
-		    </div>
-		    </div>
-		</div>
-	    </div><!-- end toggleSide -->
-	    
-	    <div id='contentAbsoluteNav' class="row hidden-xs">
-		<div id='can'>
-		    <canvas width='500px' height='500px' id="myCanvas"></canvas>
-		</div>
-		<canvas width='100px' height='500px' id="navCanvas"></canvas>
-		<div id='user' hidden='true'>a:1:{s:2:"id";s:2:"18";}</div>
-	    </div> <!-- end #content -->
-	    
-	    <!--Toggle Nav on Sm/Xs Screen-->
-	    <div id="toggleSide" class="hidden-sm hidden-md hidden-lg">
+	    <div id="toggleSide">
 		<div class="col-xs=2">
 		    <img src="assets/toggle_right.png" height="30px"/>
 		</div>
@@ -107,7 +75,7 @@
 			<p id='name' class='pushover'><?php echo $fbfullname; ?></p>
 			<img id='profpic' class='spaceUnder pushover' src="https://graph.facebook.com/<?php echo $user; ?>/picture?height=350&width=350">
 			<ul class='po'>
-			    <li class='spaceUnder'><a href='#'>Home</a></li>
+			    <li class='spaceUnder'><a href='index.php'>Home</a></li>
 			    <li class='spaceUnder'><a href='#'>Messages</a></li>
 			    <li class='spaceUnder'><a href='#'>Settings</a></li>
 			    <li class='spaceUnder'><a href='chooseInterests.php'>Choose Interests</a></li>
@@ -118,15 +86,10 @@
 		</div>
 	    </div><!-- end toggleSide -->
 	    
-	    <div id='content' class="row hidden-md hidden-lg">
-		<div id='can'>
-		    <canvas width='500px' height='500px' id="myCanvas"></canvas>
-		</div>
-		<canvas width='100px' height='500px' id="navCanvas"></canvas>
-		<div id='user' hidden='true'>a:1:{s:2:"id";s:2:"18";}</div>
-	    </div> <!-- end #content -->
+	    <div id='content' class="row">
+	    </div><!-- end #content and end .row-->
 	    
-	    <?php  print_r($_COOKIE['user']); ?></div>
+	    <div id='user' hidden='true'><?php  print_r($_COOKIE['user']); ?></div>
 	    
 	</div><!-- end .row -->
     </div><!-- end .container-->

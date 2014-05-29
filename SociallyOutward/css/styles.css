@@ -2,7 +2,7 @@
 /* Socially Outward Universal Styles */
 
 body{
-    background-color: #FFFFF0;
+    background-color: white;
     font-family: Arial, sans-serif;
 }
 
@@ -10,10 +10,15 @@ body{
     padding: 0;
     margin: 0;
 }
+
+#content{
+    margin-top: 80px;
+    padding-left: 70px;
+}
+
 a:active,a:focus {
     outline: none;
 }
-
 .item {
 	width: 200px;
 }
