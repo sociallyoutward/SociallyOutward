@@ -1,10 +1,17 @@
 .item {
     width: 290px;
+    height:290px;
     float: left;
     margin: 5px;
     background: #CCC;
     border-radius: 10px;
+    padding:20px;
+    overflow:scroll;
 }
 textarea {
 	resize:none;
+}
+
+.title{
+	font-size: 24pt;
 }

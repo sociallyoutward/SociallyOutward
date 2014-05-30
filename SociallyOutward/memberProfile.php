@@ -1,3 +1,14 @@
+<<<<<<< HEAD
+<?php
+if(!isset($_COOKIE['user']))
+{
+    header('location: index.php');
+}
+
+require 'fbconfig.php';
+?>
+=======
+>>>>>>> FETCH_HEAD
 <!--Add php back in-->
 <html>
 <head>
@@ -45,8 +56,17 @@
 	      <!-- Collect the nav links, forms, and other content for toggling -->
 	      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		<ul class="nav navbar-nav">
+<<<<<<< HEAD
 		  <li><a href="calendar/events.php">Events</a></li>
 		  <li><a href="neighbors.php">Neighbors</a></li>
+=======
+<<<<<<< HEAD
+		  <li><a href="calendar/events.php">Events</a></li>
+=======
+		  <li><a href="#">Events</a></li>
+>>>>>>> FETCH_HEAD
+		  <li><a href="#">Neighbors</a></li>
+>>>>>>> FETCH_HEAD
 		  <li><a href="community.php">Community</a></li>
 		  <li class="dropdown">
 		    <a href="bulletin.php" class="dropdown-toggle" data-toggle="dropdown">Bulletin Board <b class="caret"></b></a>
