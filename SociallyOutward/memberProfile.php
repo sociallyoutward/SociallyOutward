@@ -39,17 +39,17 @@
 		  <span class="sr-only">Toggle navigation</span>
 		  <span><img src="assets/toggle_down.png" height="15px"</span>
 		</button>
-		<a class="navbar-brand" href="#"><img src="assets/brand.png" height="45px" /></a>
+		<a class="navbar-brand" href="memberprofile.php"><img src="assets/brand.png" height="45px" /></a>
 	      </div>
 		
 	      <!-- Collect the nav links, forms, and other content for toggling -->
 	      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		<ul class="nav navbar-nav">
-		  <li><a href="#">Events</a></li>
-		  <li><a href="#">Neighbors</a></li>
+		  <li><a href="calendar/events.php">Events</a></li>
+		  <li><a href="neighbors.php">Neighbors</a></li>
 		  <li><a href="community.php">Community</a></li>
 		  <li class="dropdown">
-		    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Bulletin Board <b class="caret"></b></a>
+		    <a href="bulletin.php" class="dropdown-toggle" data-toggle="dropdown">Bulletin Board <b class="caret"></b></a>
 		    <ul class="dropdown-menu">
 		      <li><a href="#">Updates</a></li>
 		      <li class="divider"></li>
@@ -77,7 +77,7 @@
 			<p id='name' class='pushover'><?php echo $fbfullname; ?></p>
 			<img id='profpic' class='spaceUnder pushover' src="https://graph.facebook.com/<?php echo $user; ?>/picture?height=350&width=350">
 			<ul class='po'>
-			    <li class='spaceUnder'><a href='#'>Home</a></li>
+			    <li class='spaceUnder'><a href='memberprofile.php'>Home</a></li>
 			    <li class='spaceUnder'><a href='#'>Messages</a></li>
 			    <li class='spaceUnder'><a href='#'>Settings</a></li>
 			    <li class='spaceUnder'><a href='chooseInterests.php'>Choose Interests</a></li>
