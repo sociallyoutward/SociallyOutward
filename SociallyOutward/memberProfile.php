@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 if(!isset($_COOKIE['user']))
 {
@@ -6,6 +7,8 @@ if(!isset($_COOKIE['user']))
 
 require 'fbconfig.php';
 ?>
+=======
+>>>>>>> FETCH_HEAD
 <!--Add php back in-->
 <html>
 <head>
@@ -53,7 +56,11 @@ require 'fbconfig.php';
 	      <!-- Collect the nav links, forms, and other content for toggling -->
 	      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		<ul class="nav navbar-nav">
+<<<<<<< HEAD
 		  <li><a href="calendar/events.php">Events</a></li>
+=======
+		  <li><a href="#">Events</a></li>
+>>>>>>> FETCH_HEAD
 		  <li><a href="#">Neighbors</a></li>
 		  <li><a href="community.php">Community</a></li>
 		  <li class="dropdown">
