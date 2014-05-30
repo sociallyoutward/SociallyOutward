@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php
 if(!isset($_COOKIE['user']))
 {
@@ -7,9 +6,6 @@ if(!isset($_COOKIE['user']))
 
 require 'fbconfig.php';
 ?>
-=======
->>>>>>> FETCH_HEAD
-<!--Add php back in-->
 <html>
 <head>
     <title>My Profile</title>
@@ -56,22 +52,13 @@ require 'fbconfig.php';
 	      <!-- Collect the nav links, forms, and other content for toggling -->
 	      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		<ul class="nav navbar-nav">
-<<<<<<< HEAD
 		  <li><a href="calendar/events.php">Events</a></li>
 		  <li><a href="neighbors.php">Neighbors</a></li>
-=======
-<<<<<<< HEAD
-		  <li><a href="calendar/events.php">Events</a></li>
-=======
-		  <li><a href="#">Events</a></li>
->>>>>>> FETCH_HEAD
-		  <li><a href="#">Neighbors</a></li>
->>>>>>> FETCH_HEAD
 		  <li><a href="community.php">Community</a></li>
 		  <li class="dropdown">
-		    <a href="bulletin.php" class="dropdown-toggle" data-toggle="dropdown">Bulletin Board <b class="caret"></b></a>
+		    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Bulletin Board <b class="caret"></b></a>
 		    <ul class="dropdown-menu">
-		      <li><a href="#">Updates</a></li>
+		      <li><a href="feed/bulletin.php">Updates</a></li>
 		      <li class="divider"></li>
 		      <li><a href="#">Promotions</a></li>
 		      <li class="divider"></li>
@@ -108,14 +95,6 @@ require 'fbconfig.php';
 		</div>
 	    </div><!-- end toggleSide -->
 	    
-	    <div id='contentAbsoluteNav' class="row hidden-xs">
-		<div id='can'>
-		    <canvas width='500px' height='500px' id="myCanvas"></canvas>
-		</div>
-		<canvas width='100px' height='500px' id="navCanvas"></canvas>
-		<div id='user' hidden='true'>a:1:{s:2:"id";s:2:"18";}</div>
-	    </div> <!-- end #content -->
-	    
 	    <!--Toggle Nav on Sm/Xs Screen-->
 	    <div id="toggleSide" class="hidden-sm hidden-md hidden-lg">
 		<div class="col-xs=2">
@@ -127,7 +106,7 @@ require 'fbconfig.php';
 			<p id='name' class='pushover'><?php echo $fbfullname; ?></p>
 			<img id='profpic' class='spaceUnder pushover' src="https://graph.facebook.com/<?php echo $user; ?>/picture?height=350&width=350">
 			<ul class='po'>
-			    <li class='spaceUnder'><a href='#'>Home</a></li>
+			    <li class='spaceUnder'><a href='memberprofile.php'>Home</a></li>
 			    <li class='spaceUnder'><a href='#'>Messages</a></li>
 			    <li class='spaceUnder'><a href='#'>Settings</a></li>
 			    <li class='spaceUnder'><a href='chooseInterests.php'>Choose Interests</a></li>
@@ -138,15 +117,14 @@ require 'fbconfig.php';
 		</div>
 	    </div><!-- end toggleSide -->
 	    
-	    <div id='content' class="row hidden-md hidden-lg">
+	    <div id='content' class="row">
 		<div id='can'>
 		    <canvas width='500px' height='500px' id="myCanvas"></canvas>
 		</div>
 		<canvas width='100px' height='500px' id="navCanvas"></canvas>
-		<div id='user' hidden='true'>a:1:{s:2:"id";s:2:"18";}</div>
 	    </div> <!-- end #content -->
 	    
-	    <?php  print_r($_COOKIE['user']); ?></div>
+	    <div id='user' hidden='true'><?php  print_r($_COOKIE['user']); ?></div>
 	    
 	</div><!-- end .row -->
     </div><!-- end .container-->

@@ -1,4 +1,11 @@
-<!--Took out php-->
+<?php
+if(!isset($_COOKIE['user']))
+{
+    header('location: index.php');
+}
+
+require 'fbconfig.php';
+?>
 <html>
 <head>
     <title>Choose Interests</title>
@@ -39,7 +46,7 @@
 		  <span class="sr-only">Toggle navigation</span>
 		  <span><img src="assets/toggle_down.png" height="15px"</span>
 		</button>
-		<a class="navbar-brand" href="index.php"><img src="assets/brand.png" height="45px" /></a>
+		<a class="navbar-brand" href="memberprofile.php"><img src="assets/brand.png" height="45px" /></a>
 	      </div>
 		
 	      <!-- Collect the nav links, forms, and other content for toggling -->
@@ -75,7 +82,7 @@
 			<p id='name' class='pushover'><?php echo $fbfullname; ?></p>
 			<img id='profpic' class='spaceUnder pushover' src="https://graph.facebook.com/<?php echo $user; ?>/picture?height=350&width=350">
 			<ul class='po'>
-			    <li class='spaceUnder'><a href='index.php'>Home</a></li>
+			    <li class='spaceUnder'><a href='memberprofile.php'>Home</a></li>
 			    <li class='spaceUnder'><a href='#'>Messages</a></li>
 			    <li class='spaceUnder'><a href='#'>Settings</a></li>
 			    <li class='spaceUnder'><a href='chooseInterests.php'>Choose Interests</a></li>
