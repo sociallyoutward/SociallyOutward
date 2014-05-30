@@ -20,6 +20,9 @@ a:active,a:focus {
     outline: none;
 }
 
+.item {
+    width: 200px;
+
 .modal-dialog{
     left: 0;
 }
