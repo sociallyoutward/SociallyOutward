@@ -5,3 +5,6 @@
     background: #CCC;
     border-radius: 10px;
 }
+textarea {
+	resize:none;
+}
