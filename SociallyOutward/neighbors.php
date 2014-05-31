@@ -1,11 +1,4 @@
-<?php
-if(!isset($_COOKIE['user']))
-{
-    header('location: index.php');
-}
 
-require 'fbconfig.php';
-?>
 <html>
 <head>
     <title>Neighbors</title>
@@ -96,55 +89,80 @@ require 'fbconfig.php';
 	    
 	    <div id='content' class="row">
 		<div class="row">
-		    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-			<div class="profileBox">
-			    <div class="boxContent">
-				<div class="box">
-				    <img src="assets/monkey.jpg" class="resize" height="180px"/>
-				</div>
-			    </div>
-			    <div class="boxFooterFriend">
-				<a href="#">Friend Name</a>
-			    </div>
-			</div>
-		    </div>
-		    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-			<div class="profileBox">
-			    <div class="boxContent">
-				content content
-			    </div>
-			    <div class="boxFooterNeighbor">
-				Neighbor Name
-			    </div>
-			</div>
-		    </div>
-		    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-			<div class="profileBox">
-			    <div class="boxContent">
-				Picture fills screen
-			    </div>
-			    <div class="boxFooterNeighbor">
-				Neighbor Name
-			    </div>
-			</div>
-		    </div>
-		    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-			<div class="profileBox">
-			    <div class="boxContent">
-				<div class="flip"> 
-				    <div class="card"> 
-					<div class="face front"> 
-					    this da front
-					</div> 
-					<div class="face back"> 
-					    back it up
-					</div> 
+		    <div class="profileBox">
+		        <div class="boxContent">
+			    <div class="flip"> 
+				<div class="card"> 
+				    <div class="face front"> 
+				        <img src="assets/monkey.jpg" height="180px"/>
 				    </div> 
-				</div>
+				    <div class="face back"> 
+				        Matching Interests
+				        <br>Sports
+				        <br>Food
+				    </div> 
+				</div> 
 			    </div>
-			    <div class="boxFooterFriend">
-				Friend Name
+			</div>
+			<div class="boxFooterNeighbor">
+			    Neighbor Name
+			</div>
+		    </div>
+		    <div class="profileBox">
+		        <div class="boxContent">
+			    <div class="flip"> 
+				<div class="card"> 
+				    <div class="face front"> 
+				        <img src="assets/monkey.jpg" height="180px"/>
+				    </div> 
+				    <div class="face back"> 
+				        Matching Interests
+				        <br>Sports
+				        <br>Food
+				    </div> 
+				</div> 
 			    </div>
+			</div>
+			<div class="boxFooterFriend">
+			    Friend Name
+			</div>
+		    </div>
+		    <div class="profileBox">
+		        <div class="boxContent">
+			    <div class="flip"> 
+				<div class="card"> 
+				    <div class="face front"> 
+				        <img src="assets/monkey.jpg"/>
+				    </div> 
+				    <div class="face back"> 
+				        Matching Interests
+				        <br>Sports
+				        <br>Food
+				    </div> 
+				</div> 
+			    </div>
+			</div>
+			<div class="boxFooterNeighbor">
+			    Neighbor Name
+			</div>
+		    </div>
+		    <div class="profileBox">
+		        <div class="boxContent">
+			    <div class="flip"> 
+				<div class="card"> 
+				    <div class="face front"> 
+				        <img src="assets/monkey.jpg" height="180px"/>
+				    </div> 
+				    <div class="face back"> 
+				        Matching Interests
+				        <br>Sports
+				        <br>Food
+				    </div> 
+				</div> 
+			    </div>
+			</div>
+			<div class="boxFooterFriend">
+			    Friend Name
 			</div>
 		    </div>
 		</div>
@@ -152,31 +170,8 @@ require 'fbconfig.php';
 	    
 	    <div id='user' hidden='true'><?php  print_r($_COOKIE['user']); ?></div>
 	    
-	    <script> <!-- picture resize -->
-		var current_h = null;
-		var current_w = null;
-		
-		$('.resize').hover(
-		
-		function () {
-		    current_h = $(this, 'img')[0].height;
-		    current_w = $(this, 'img')[0].width;
-		    $(this).stop(true, false).animate({
-			width: (current_w * 0.75),
-			height: (current_h * 0.75)
-		    }, 300);
-		},
-		
-		function () {
-		    $(this).stop(true, false).animate({
-			width: current_w + 'px',
-			height: current_h + 'px'
-		    }, 300);
-		});
-	    </script>
-	    
 	    <script> <!-- card flip -->
-		$('.flip').click(function(){
+		$('.flip').mouseenter(function(){
 		$(this).find('.card').addClass('flipped').mouseleave(function(){
 		    $(this).removeClass('flipped');
 		});
