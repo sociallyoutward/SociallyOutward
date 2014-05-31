@@ -50,7 +50,7 @@ body {
     position: relative;
 }
 .flip .card.flipped {
-  -webkit-transform: rotatey(-180deg);
+  -webkit-transform: rotateY(-180deg);
 }
 .flip .card {
   width: 100%;
@@ -73,8 +73,40 @@ body {
   background: white;
 }
 .flip .card .back {
-  -webkit-transform: rotatey(-180deg);
+  -webkit-transform: rotateY(-180deg);
     background: white;
     color: black;
     padding: 15px;
+}
+
+.block{
+    line-height: 25px;
+}
+
+.category{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.circle{
+    border: solid 1px black;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.green{
+    background-color: #afe9c6;
+}
+
+.purple{
+    background-color: #afafe9;
+}
+
+.percent{
+    font-size: 20px;
+    float: right;
 }

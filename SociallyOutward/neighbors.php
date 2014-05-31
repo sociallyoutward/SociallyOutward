@@ -98,8 +98,27 @@
 				    </div> 
 				    <div class="face back"> 
 				        Matching Interests
-				        <br>Sports
-				        <br>Food
+				        <div class="block">
+					    <div class="circle"></div>Sports
+					    <div class="category"></div>
+					</div>
+				        <div class="block">
+					    <div class="circle green"></div>Entertainment
+					</div>
+					<div class="block">
+					    <div class="circle"></div>Food & Beverage
+					</div>
+					<div class="block">
+					    <div class="circle"></div>Recreational Activities
+					</div>
+					<div class="block">
+					    <div class="circle purple"></div>Seasonal
+					</div>
+					<div class="block">
+					    <div class="circle"></div>Arts, Crafts, & Hobbies
+					</div>
+					<br><br><br>
+					<div class="percent">87%</div>
 				    </div> 
 				</div> 
 			    </div>
