@@ -1,3 +1,10 @@
+<?php
+require 'fbconfig.php';   // Include fbconfig.php file
+if(isset($_COOKIE['user']))
+{
+    header('location: memberprofile.php');
+}
+?>
 <!-- Took out php here for testing MAMP -->
 
 <html xmlns:fb="http://www.facebook.com/2008/fbml">
@@ -33,8 +40,8 @@
 	<img src="assets/logo.png" height="100px" id="centerlogo" />
 	<form id='login_form'>
 		<div id='lText'>
-		    <input type="text" value="username" id="username" class="lInput" onfocus="clearField(this,0);"></input>
-		    <input type="password" value="password" id="password" class="lInput" onfocus="clearField(this,1);"></input>
+		    <input type="text" placeholder="username" id="username" class="lInput"></input>
+		    <input type="password" placeholder="password" id="password" class="lInput"></input>
 		</div>
 		<div id="lOther">
 		    <span id="kmli"><input type="checkbox" id='stayLoggedIn'>Keep me logged in</input></span>
@@ -46,12 +53,14 @@
 		</div>
 		
 		<!--Changed link for testing-->
-		<a href="#"><img src = "assets/fb_login.png" id = 'fb_login'></a>
+
+		<a href="<?php echo $loginUrl; ?>"><img src = "assets/fb_login.png" id = 'fb_login'></a>
 	</form>
 	
 	
 </body>
 </html>
+
 
 <!-- Lucida sans
 Segoe print  -->
