@@ -56,13 +56,13 @@ require 'fbconfig.php';
 		  <li><a href="neighbors.php">Neighbors</a></li>
 		  <li><a href="community.php">Community</a></li>
 		  <li class="dropdown">
-		    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Bulletin Board <b class="caret"></b></a>
+		    <a href="bulletin.php" class="dropdown-toggle" data-toggle="dropdown">Bulletin Board <b class="caret"></b></a>
 		    <ul class="dropdown-menu">
 		      <li><a href="feed/bulletin.php">Updates</a></li>
 		      <li class="divider"></li>
-		      <li><a href="#">Promotions</a></li>
+		      <li><a href="feed/bulletin.php">Promotions</a></li>
 		      <li class="divider"></li>
-		      <li><a href="#">Events</a></li>
+		      <li><a href="feed/bulletin.php">Events</a></li>
 		    </ul>
 		  </li>
 		</ul>

@@ -1,4 +1,11 @@
+<?php
+if(!isset($_COOKIE['user']))
+{
+    header('location: index.php');
+}
 
+require '../fbconfig.php';
+?>
 <html>
 <head>
     <title>Bulletin Board</title>
@@ -23,6 +30,7 @@
 	<script src="masonryInit.js"></script>
 	<script src="getPosts.js"></script>
 	<script src="createPosts.js"></script>
+	<script src="deletePosts.js"></script>
 	<script src="populateFeed.js"></script>
 	<script src="tabs.js"></script>
 	<link href="masonryTest.css" type="text/css" rel="stylesheet">
@@ -77,7 +85,7 @@
 		    <div id="sideNav side-Navigation" class="sNav">
 			<div id='sNav-inner'>
 			<p id='name' class='pushover'><?php echo $fbfullname; ?></p>
-			<img id='profpic' class='spaceUnder pushover' src="https://graph.facebook.com/<?php echo $user; ?>/picture?height=350&width=350">
+			<a href="../memberprofile.php"><img id='profpic' class='spaceUnder pushover' src="https://graph.facebook.com/<?php echo $user; ?>/picture?height=350&width=350"></a>
 			<ul class='po'>
 			    <li class='spaceUnder'><a href='../memberprofile.php'>Home</a></li>
 			    <li class='spaceUnder'><a href='messages.php'>Messages</a></li>
@@ -92,8 +100,17 @@
 	    
 	    <div id='content' class="row">
 		<!-- Button trigger modal -->
-		<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-		  Create Bulletin Post
+		<button class="btn btn-primary btn-lg modal-toggle" data-toggle="modal" data-target="#myModal" id="button1">
+		  Create Update
+		</button>
+		<button class="btn btn-primary btn-lg modal-toggle" data-toggle="modal" data-target="#myModal" id="button2">
+		  Create Promotion
+		</button>
+		<button class="btn btn-primary btn-lg modal-toggle" data-toggle="modal" data-target="#myModal" id="button3">
+		  Create Event
+		</button>
+		<button class="btn btn-primary btn-lg" id="clear-posts">
+		  Clear Post Database
 		</button>
 
 		<!-- Modal -->

@@ -1,0 +1,13 @@
+______________________________
+KEY
++ : currently being worked on
+x : bug fixed
+* : potentially unavoidable
+# : potentially irrelevant
+_______________________________
+
+List of Current Bugs:
+
+1.
+2.
+3.
