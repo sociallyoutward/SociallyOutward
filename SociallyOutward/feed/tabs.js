@@ -23,4 +23,12 @@ $('#tab3 a').click(function(e){
 	getPosts(2,$("#type3"));
 });
 
+$('#button1').data("type",0);
+$('#button1').data("tab",$("#type1"));
+$('#button2').data("type",1);
+$('#button2').data("tab",$("#type2"));
+$('#button3').data("type",2);
+$('#button3').data("tab",$("#type3"));
+
+
 });

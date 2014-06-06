@@ -7,20 +7,42 @@ $(function(){
 		posts[0] = new Array();
 		posts[0]['title']=title;
 		posts[0]['content']=content;
-		createPosts(posts,$('#type1'),0);
+		if(title=="")
+		{
+			$('#post-title').css( "border","solid thin red");
+			if(content==""){
+				$('#post-content').css( "border","solid thin red");
+			}
+			else{
+				$('#post-content').css( "border","solid thin black");
+			}
+		}
+		else if(content=="")
+		{
+			$('#post-title').css( "border","solid thin black");	
+			$('#post-content').css( "border","solid thin red");
+		}
+		else{
+		createPosts(posts,$('#myModal').data("tab"),$('#myModal').data("type"));
 
 		$.ajax('addPost.php',
     	{
     		type: 'POST',
-    		data:{title:title,content:content,type:0},
+    		data:{title:title,content:content,type:$('#myModal').data("type")},
 			cache: false,
-			success: function (data) {alert("POST SUCCESS")},
+			success: function (data) {},
 			error: function (e) {console.log(e);}
      	});
 
 		$('#myModal').modal('hide');
-
-
+		}
+	});
+	$('.modal-toggle').click(function(){
+			
+			$('#myModal').data("type",$(this).data("type"));
+			$('#myModal').data("tab",$(this).data("tab"));
+			$('#post-title').css( "border","solid thin black");	
+			$('#post-content').css( "border","solid thin black");	
 	});
 });
 

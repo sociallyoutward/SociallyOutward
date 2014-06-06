@@ -11,8 +11,14 @@ var deletePosts = function(){
     	{
     		type: 'GET',
 			cache: false,
-			success: function (data) {$("#type1").html("");},
+			success: function (data) {clearDivs();},
 			error: function (e) {console.log(e);}
      	});
 
+}
+
+var clearDivs = function(){
+	$('#type1').html("");
+	$('#type2').html("");
+	$('#type3').html("");
 }
