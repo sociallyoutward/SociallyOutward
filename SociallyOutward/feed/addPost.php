@@ -1,3 +1,5 @@
+<!-- script for adding posts into database -->
+
 <?php
 
 include '../dbconfig.php'; 

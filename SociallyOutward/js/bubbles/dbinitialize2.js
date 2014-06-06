@@ -44,7 +44,7 @@ function init(){
 
 	}
 
-	else if(whichPage=="memberProfile.php")
+	else if(whichPage=="memberprofile.php")
 	{
 		bubbleCalcMe(member,1,true,true);
 	}
@@ -142,7 +142,7 @@ var setNavFinish = function(parentID)
 		navCircles[currLevel-1].removeAllEventListeners("click");
 		navCircles[currLevel-1].addEventListener("click",function(event){navClickHandler(event); bubbleCalc(parentID,c,true);});
 	}
-	else if(whichPage=="memberProfile.php")
+	else if(whichPage=="memberprofile.php")
 	{
 		console.log("INITIAL:"+initial);
 		navCircles[currLevel-1].removeAllEventListeners("click");

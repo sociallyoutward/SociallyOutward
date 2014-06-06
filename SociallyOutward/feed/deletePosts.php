@@ -1,3 +1,4 @@
+<!-- script to delete all posts from the database -->
 <?php
 
 include '../dbconfig.php'; 

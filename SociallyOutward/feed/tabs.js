@@ -1,3 +1,4 @@
+//on page load set up tab functionality to get posts upon tab change
 $(function(){
 
 getPosts(0,$("#type1"));

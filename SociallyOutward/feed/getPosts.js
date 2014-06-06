@@ -1,3 +1,4 @@
+//function to grab all posts of type postType from the database to be passed on to function createPosts
 var getPosts = function(postType,tab)
 {
 	$.ajax('getPosts.php',

@@ -1,5 +1,5 @@
 var containers; 
-
+//on page load initialize the three tab divs as masonry containers
 $(function(){
 	$('#type1').masonry({
         itemSelector: '.item',

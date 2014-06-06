@@ -1,3 +1,4 @@
+<!-- script to grab posts of type postType from the databses -->
 <?php
 
 include '../dbconfig.php'; 
