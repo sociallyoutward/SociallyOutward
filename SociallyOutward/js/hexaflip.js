@@ -35,7 +35,6 @@
   defaults = {
     size: 200,
     margin: 10,
-    fontSize: 132,
     perspective: 1000,
     touchSensitivity: 1
   };

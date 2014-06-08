@@ -1,4 +1,11 @@
+<?php
+if(!isset($_COOKIE['user']))
+{
+    header('location: index.php');
+}
 
+require 'fbconfig.php';
+?>
 <html>
 <head>
     <title>Neighbors</title>
@@ -15,9 +22,9 @@
     <!-- Socially Outward Styles -->
     <link href="css/memberProfile.css" type="text/css" rel="stylesheet">
     <link href="css/navigationTemplate.css" type="text/css" rel="stylesheet">
-	<link href="css/neighbors.css" type="text/css" rel="stylesheet">
+    <link href="css/neighbors.css" type="text/css" rel="stylesheet">
     <link href="css/styles.css" type="text/css" rel="stylesheet">
-	
+    <link href="css/hexaflip.css" rel="stylesheet" type="text/css">
     <link rel="icon" href="assets/logo.png">
     
     <script src=" http://code.createjs.com/createjs-2013.02.12.min.js"></script>
@@ -129,17 +136,10 @@
 		    </div>
 		    <div class="profileBox">
 		        <div class="boxContent">
-			    <div class="flip"> 
-				<div class="card"> 
-				    <div class="face front"> 
-				        <img src="assets/monkey.jpg" height="180px"/>
-				    </div> 
-				    <div class="face back"> 
-				        Matching Interests
-				        <br>Sports
-				        <br>Food
-				    </div> 
-				</div> 
+			    <div class="buttons">
+				<div id="prev">
+				    <div id="cube" class="demo"></div>
+				</div>
 			    </div>
 			</div>
 			<div class="boxFooterFriend">
@@ -185,6 +185,12 @@
 			</div>
 		    </div>
 		</div>
+		*********
+                <div class="buttons">
+                    <div id="prev">
+                        <div id="cube" class="demo"></div>
+                    </div>
+                </div>
 	    </div><!-- end #content and end .row-->
 	    
 	    <div id='user' hidden='true'><?php  print_r($_COOKIE['user']); ?></div>
@@ -196,6 +202,31 @@
 		});
 		return true;
 	    });
+	    </script>
+	    
+	    <script src="js/hexaflip.js"></script>
+	    <script>
+		var friendCube,
+		    images = [
+			'<img src="assets/monkey.jpg" height="180px"/>',
+			'Matching Interests',
+			'Link to their profile web'
+		    ];
+		document.addEventListener('DOMContentLoaded', function(){
+		    friendCube = new HexaFlip(document.getElementById('cube'), {set: images},{
+			size: 286
+		    });
+		    document.getElementById('prev').addEventListener('click', function(){
+			friendCube.flipBack();
+		    }, false);
+		    
+		    document.getElementById('next').addEventListener('click', function(){
+			friendCube.flip();
+		    }, false);
+		    
+		    
+		    
+		}, false);
 	    </script>
 	    
 	</div><!-- end .row -->
