@@ -11,6 +11,9 @@ if(isset($_COOKIE['user']))
 <head>
     <title>SociallyOutward</title>
     
+    <!--Favicon-->
+    <link rel="icon" href="assets/logo.png">
+    
     <!-- Bootstrap 3.1.1. Latest compiled and minified CSS -->
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     
