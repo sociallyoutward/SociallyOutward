@@ -32,54 +32,9 @@
     <link href="css/memberProfile.css" type="text/css" rel="stylesheet">
     <link href="css/navigationTemplate.css" type="text/css" rel="stylesheet">
     <link href="css/styles.css" type="text/css" rel="stylesheet">
-
-    <style>
-        #menu{
-        margin-left: -5px;
-    }
-    
-    ul{
-        list-style: none;
-    }
-    
-    .category{
-        width: 95%;
-        background-color: #ccc;
-        margin-bottom: 5px;
-        padding: 5px;
-    }
-    
-    .btn{
-        text-align: left;
-        padding-left: 10px;
-        border-radius: 0;
-        border: 1px solid #ccc;
-    }
-    
-    .btn-default{
-        background-color: #afe9c6;
-    }
-    
-    .btn-warning{
-        background-color: #E2F7EB;
-        color: black;
-    }
-    
-    .btn-warning:active, .btn-warning:hover{
-        background-color: #D7D9D9;
-        color: black;
-    }
-    
-    .btn-primary{
-        background-color: white;
-        color: black;
-    }
-    
-    a:link{
-        color: black;
-    }
-    
-    </style>
+    <link href="css/accordion.css" type="text/css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
 </head>
 
@@ -155,231 +110,231 @@
                         
                         <!-- Accordian -->
                         <ul id="menu" class="menu">
-                            <li><a href="#"><button type="button" class="btn btn-default btn-block">Sports</button></a>
+                            <li><a href="#"><button type="button" class="btn btn-block inner1">Sports</button></a>
                                 <ul class="sub-menu">
-                                    <li><a href="#"><button type="button" class="btn btn-warning btn-block">Field Sports</button></a>
+                                    <li><a href="#"><button type="button" class="btn btn-block inner2"><i class="fa fa-chevron-right arrow1"></i> Field Sports</button></a>
                                         <ul class="sub-menu">
-                                            <li><button type="button" class="btn btn-primary btn-block">Football</button></li>
-                                            <li><button type="button" class="btn btn-primary btn-block">Baseball/Softball</button></li>
-                                            <li><button type="button" class="btn btn-primary btn-block">Soccer</button></li>
-                                            <li><button type="button" class="btn btn-primary btn-block">Cricket</button></li>
-                                            <li><button type="button" class="btn btn-primary btn-block">Lacrosse</button></li>
-                                            <li><button type="button" class="btn btn-primary btn-block">Rugby</button></li>
-                                            <li><button type="button" class="btn btn-primary btn-block">Field Hockey</button></li>
-                                            <li><button type="button" class="btn btn-primary btn-block">Ultimate Frisbee</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Football</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Baseball/Softball</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Soccer</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Cricket</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Lacrosse</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Rugby</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Field Hockey</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Ultimate Frisbee</button></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#"><button type="button" class="btn btn-warning btn-block">Court Sports</button></a>
+                                    <li><a href="#"><button type="button" class="btn btn-block inner2"><i class="fa fa-chevron-right arrow1"></i> Court Sports</button></a>
                                         <ul class="sub-menu">
-                                            <li><button type="button" class="btn btn-primary btn-block">Basketball</button></li>
-                                            <li><button type="button" class="btn btn-primary btn-block">Volleyball</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Basketball</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Volleyball</button></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#"><button type="button" class="btn btn-warning btn-block">Water Sports</button></a>
+                                    <li><a href="#"><button type="button" class="btn btn-block inner2"><i class="fa fa-chevron-right arrow1"></i> Water Sports</button></a>
                                         <ul class="sub-menu">
-                                            <li><button type="button" class="btn btn-primary btn-block">Swimming</button></li>
-                                            <li><button type="button" class="btn btn-primary btn-block">Motorized</button></li>
-                                            <li><button type="button" class="btn btn-primary btn-block">Scuba/Snorkeling</button></li>
-                                            <li><button type="button" class="btn btn-primary btn-block">Paddle Sports</button></li>
-                                            <li><button type="button" class="btn btn-primary btn-block">Free Diving</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Swimming</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Motorized</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Scuba/Snorkeling</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Paddle Sports</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Free Diving</button></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#"><button type="button" class="btn btn-warning btn-block">Racket Sports</button></a>
+                                    <li><a href="#"><button type="button" class="btn btn-block inner2"><i class="fa fa-chevron-right arrow1"></i> Racket Sports</button></a>
                                         <ul class="sub-menu">
-                                            <li><button type="button" class="btn btn-primary btn-block">Tennis</button></li>
-                                            <li><button type="button" class="btn btn-primary btn-block">Badminton</button></li>
-                                            <li><button type="button" class="btn btn-primary btn-block">Racquetball</button></li>
-                                            <li><button type="button" class="btn btn-primary btn-block">Squash</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Tennis</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Badminton</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Racquetball</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Squash</button></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#"><button type="button" class="btn btn-warning btn-block">Cardio & Fitness</button></a>
+                                    <li><a href="#"><button type="button" class="btn btn-block inner2"><i class="fa fa-chevron-right arrow1"></i> Cardio & Fitness</button></a>
                                         <ul class="sub-menu">
-                                            <li><button type="button" class="btn btn-primary btn-block">Running</button></li>
-                                            <li><button type="button" class="btn btn-primary btn-block">Club Sports</button></li>
-                                            <li><button type="button" class="btn btn-primary btn-block">Dance</button></li>
-                                            <li><button type="button" class="btn btn-primary btn-block">On & Off the Trail</button></li>
-                                            <li><button type="button" class="btn btn-primary btn-block">Weightlifting</button></li>
-                                            <li><button type="button" class="btn btn-primary btn-block">Aerobics</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Running</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Club Sports</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Dance</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> On & Off the Trail</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Weightlifting</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Aerobics</button></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#"><button type="button" class="btn btn-warning btn-block">Winter Sports</button></a>
+                                    <li><a href="#"><button type="button" class="btn btn-block inner2"><i class="fa fa-chevron-right arrow1"></i> Winter Sports</button></a>
                                         <ul class="sub-menu">
-                                            <li><button type="button" class="btn btn-primary btn-block">Snowboarding</button></li>
-                                            <li><button type="button" class="btn btn-primary btn-block">Hockey</button></li>
-                                            <li><button type="button" class="btn btn-primary btn-block">Downhill Skiing</button></li>
-                                            <li><button type="button" class="btn btn-primary btn-block">Cross-Country Skiing</button></li>
-                                            <li><button type="button" class="btn btn-primary btn-block">Snowmobiling</button></li>
-                                            <li><button type="button" class="btn btn-primary btn-block">Ice Skating</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Snowboarding</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Hockey</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Downhill Skiing</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Cross-Country Skiing</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Snowmobiling</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Ice Skating</button></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#"><button type="button" class="btn btn-warning btn-block">Motor Sports</button></a>
+                                    <li><a href="#"><button type="button" class="btn btn-block inner2"><i class="fa fa-chevron-right arrow1"></i> Motor Sports</button></a>
                                         <ul class="sub-menu">
-                                            <li><button type="button" class="btn btn-primary btn-block">NASCAR</button></li>
-                                            <li><button type="button" class="btn btn-primary btn-block">Motocross</button></li>
-                                            <li><button type="button" class="btn btn-primary btn-block">ATV</button></li>
-                                            <li><button type="button" class="btn btn-primary btn-block">Drag Racing</button></li>
-                                            <li><button type="button" class="btn btn-primary btn-block">Monster Trucks</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> NASCAR</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Motocross</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> ATV</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Drag Racing</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Monster Trucks</button></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#"><button type="button" class="btn btn-warning btn-block">Karate</button></a>
+                                    <li><a href="#"><button type="button" class="btn btn-block inner2"><i class="fa fa-chevron-right arrow1"></i> Karate</button></a>
                                         <ul class="sub-menu">
-                                            <li><button type="button" class="btn btn-primary btn-block">Boxing</button></li>
-                                            <li><button type="button" class="btn btn-primary btn-block">Karate</button></li>
-                                            <li><button type="button" class="btn btn-primary btn-block">Self Defense</button></li>
-                                            <li><button type="button" class="btn btn-primary btn-block">MMA</button></li>
-                                            <li><button type="button" class="btn btn-primary btn-block">Jujitzu</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Boxing</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Karate</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Self Defense</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> MMA</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Jujitzu</button></li>
                                         </ul>
                                     </li>
                                 </ul>
                             </li>
-                            <li><a href="#"><button type="button" class="btn btn-default btn-block">Entertainment</button></a>
+                            <li><a href="#"><button type="button" class="btn btn-block inner1">Entertainment</button></a>
                                 <ul class="sub-menu">
-                                    <li><a href="#"><button type="button" class="btn btn-warning btn-block">Educational</button></a>
+                                    <li><a href="#"><button type="button" class="btn btn-block inner2"><i class="fa fa-chevron-right arrow1"></i> Educational</button></a>
                                         <ul class="sub-menu">
-                                            <li><button type="button" class="btn btn-primary btn-block">Cultural Events</button></li>
-                                            <li><button type="button" class="btn btn-primary btn-block">University Events</button></li>
-                                            <li><button type="button" class="btn btn-primary btn-block">Dance Clubs</button></li>
-                                            <li><button type="button" class="btn btn-primary btn-block">Conventions</button></li>
-                                            <li><button type="button" class="btn btn-primary btn-block">Performance Lessons</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Cultural Events</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> University Events</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Dance Clubs</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Conventions</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Performance Lessons</button></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#"><button type="button" class="btn btn-warning btn-block">Performing Arts</button></a>
+                                    <li><a href="#"><button type="button" class="btn btn-block inner2"><i class="fa fa-chevron-right arrow1"></i> Performing Arts</button></a>
                                         <ul class="sub-menu">
-                                            <li><button type="button" class="btn btn-primary btn-block">Music</button></li>
-                                            <li><button type="button" class="btn btn-primary btn-block">Shows</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Music</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Shows</button></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#"><button type="button" class="btn btn-warning btn-block">Cinema</button></a>
+                                    <li><a href="#"><button type="button" class="btn btn-block inner2"><i class="fa fa-chevron-right arrow1"></i> Cinema</button></a>
                                         <ul class="sub-menu">
-                                            <li><button type="button" class="btn btn-primary btn-block">Movie Theaters</button></li>
-                                            <li><button type="button" class="btn btn-primary btn-block">Drive-In Movies</button></li>
-                                            <li><button type="button" class="btn btn-primary btn-block">Movie Clubs</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Movie Theaters</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Drive-In Movies</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Movie Clubs</button></li>
                                         </ul>
                                     </li>
                                 </ul>
                             </li>
-                            <li><a href="#"><button type="button" class="btn btn-default btn-block">Food & Beverage</button></a>
+                            <li><a href="#"><button type="button" class="btn btn-block inner1">Food & Beverage</button></a>
                                 <ul class="sub-menu">
-                                    <li><a href="#"><button type="button" class="btn btn-warning btn-block">Cooking</button></a>
+                                    <li><a href="#"><button type="button" class="btn btn-block inner2"><i class="fa fa-chevron-right arrow1"></i> Cooking</button></a>
                                         <ul class="sub-menu">
-                                            <li><button type="button" class="btn btn-primary btn-block">Classes</button></li>
-                                            <li><button type="button" class="btn btn-primary btn-block">Organic</button></li>
-                                            <li><button type="button" class="btn btn-primary btn-block">Ethnic</button></li>
-                                            <li><button type="button" class="btn btn-primary btn-block">Local</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Classes</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Organic</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Ethnic</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Local</button></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#"><button type="button" class="btn btn-warning btn-block">Coffee & Tea</button></a>
+                                    <li><a href="#"><button type="button" class="btn btn-block inner2"><i class="fa fa-chevron-right arrow1"></i> Coffee & Tea</button></a>
                                         <ul class="sub-menu">
-                                            <li><button type="button" class="btn btn-primary btn-block">xxxxxx</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> xxxxxx</button></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#"><button type="button" class="btn btn-warning btn-block">Alcohol</button></a>
+                                    <li><a href="#"><button type="button" class="btn btn-block inner2"><i class="fa fa-chevron-right arrow1"></i> Alcohol</button></a>
                                         <ul class="sub-menu">
-                                            <li><button type="button" class="btn btn-primary btn-block">Wine</button></li>
-                                            <li><button type="button" class="btn btn-primary btn-block">Beer</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Wine</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Beer</button></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#"><button type="button" class="btn btn-warning btn-block">Dining</button></a>
+                                    <li><a href="#"><button type="button" class="btn btn-block inner2"><i class="fa fa-chevron-right arrow1"></i> Dining</button></a>
                                         <ul class="sub-menu">
-                                            <li><button type="button" class="btn btn-primary btn-block">Fine Dining</button></li>
-                                            <li><button type="button" class="btn btn-primary btn-block">Casual Dining</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Fine Dining</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Casual Dining</button></li>
                                         </ul>
                                     </li>
                                 </ul>
                             </li>
-                            <li><a href="#"><button type="button" class="btn btn-default btn-block">Recreational</button></a>
+                            <li><a href="#"><button type="button" class="btn btn-block inner1">Recreational</button></a>
                                 <ul class="sub-menu">
-                                    <li><a href="#"><button type="button" class="btn btn-warning btn-block">Outdoors</button></a>
+                                    <li><a href="#"><button type="button" class="btn btn-block inner2"><i class="fa fa-chevron-right arrow1"></i> Outdoors</button></a>
                                         <ul class="sub-menu">
-                                            <li><button type="button" class="btn btn-primary btn-block">Camping</button></li>
-                                            <li><button type="button" class="btn btn-primary btn-block">Zoos</button></li>
-                                            <li><button type="button" class="btn btn-primary btn-block">Parks/Hiking</button></li>
-                                            <li><button type="button" class="btn btn-primary btn-block">Picknicking</button></li>
-                                            <li><button type="button" class="btn btn-primary btn-block">Dog Parks</button></li>
-                                            <li><button type="button" class="btn btn-primary btn-block">Botanical Gardens</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Camping</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Zoos</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Parks/Hiking</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Picknicking</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Dog Parks</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Botanical Gardens</button></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#"><button type="button" class="btn btn-warning btn-block">Family</button></a>
+                                    <li><a href="#"><button type="button" class="btn btn-block inner2"><i class="fa fa-chevron-right arrow1"></i> Family</button></a>
                                         <ul class="sub-menu">
-                                            <li><button type="button" class="btn btn-primary btn-block">Museums</button></li>
-                                            <li><button type="button" class="btn btn-primary btn-block">Bowling</button></li>
-                                            <li><button type="button" class="btn btn-primary btn-block">Laser Tag</button></li>
-                                            <li><button type="button" class="btn btn-primary btn-block">Bowling</button></li>
-                                            <li><button type="button" class="btn btn-primary btn-block">Go Karting</button></li>
-                                            <li><button type="button" class="btn btn-primary btn-block">Art Exhibits</button></li>
-                                            <li><button type="button" class="btn btn-primary btn-block">Mini Golf</button></li>
-                                            <li><button type="button" class="btn btn-primary btn-block">Amusement Parks</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Museums</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Bowling</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Laser Tag</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Bowling</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Go Karting</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Art Exhibits</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Mini Golf</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Amusement Parks</button></li>
                                         </ul>
                                     </li>
                             </li>
                             </ul>
                             </li>
-                            <li><a href="#"><button type="button" class="btn btn-default btn-block">Arts, Crafts, & Hobbies</button></a>
+                            <li><a href="#"><button type="button" class="btn btn-block inner1">Arts, Crafts, & Hobbies</button></a>
                                 <ul class="sub-menu">
-                                    <li><a href="#"><button type="button" class="btn btn-warning btn-block">Arts & Crafts</button></a>
+                                    <li><a href="#"><button type="button" class="btn btn-block inner2"><i class="fa fa-chevron-right arrow1"></i> Arts & Crafts</button></a>
                                         <ul class="sub-menu">
-                                            <li><button type="button" class="btn btn-primary btn-block">Painting</button></li>
-                                            <li><button type="button" class="btn btn-primary btn-block">Crafts</button></li>
-                                            <li><button type="button" class="btn btn-primary btn-block">Ceramics</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Painting</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Crafts</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Ceramics</button></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#"><button type="button" class="btn btn-warning btn-block">Tech</button></a>
+                                    <li><a href="#"><button type="button" class="btn btn-block inner2"><i class="fa fa-chevron-right arrow1"></i> Tech</button></a>
                                         <ul class="sub-menu">
-                                            <li><button type="button" class="btn btn-primary btn-block">Programming</button></li>
-                                            <li><button type="button" class="btn btn-primary btn-block">Design</button></li>
-                                            <li><button type="button" class="btn btn-primary btn-block">Gaming</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Programming</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Design</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Gaming</button></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#"><button type="button" class="btn btn-warning btn-block">Hobbies</button></a>
+                                    <li><a href="#"><button type="button" class="btn btn-block inner2"><i class="fa fa-chevron-right arrow1"></i> Hobbies</button></a>
                                         <ul class="sub-menu">
-                                            <li><button type="button" class="btn btn-primary btn-block">Book Club</button></li>
-                                            <li><button type="button" class="btn btn-primary btn-block">Writing</button></li>
-                                            <li><button type="button" class="btn btn-primary btn-block">Collectables</button></li>
-                                            <li><button type="button" class="btn btn-primary btn-block">Model Making</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Book Club</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Writing</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Collectables</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Model Making</button></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#"><button type="button" class="btn btn-warning btn-block">Relaxation</button></a>
+                                    <li><a href="#"><button type="button" class="btn btn-block inner2"><i class="fa fa-chevron-right arrow1"></i> Relaxation</button></a>
                                         <ul class="sub-menu">
-                                            <li><button type="button" class="btn btn-primary btn-block">Meditation</button></li>
-                                            <li><button type="button" class="btn btn-primary btn-block">Massage</button></li>
-                                            <li><button type="button" class="btn btn-primary btn-block">Acupuncture</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Meditation</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Massage</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Acupuncture</button></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#"><button type="button" class="btn btn-warning btn-block">Autmobiles</button></a>
+                                    <li><a href="#"><button type="button" class="btn btn-block inner2"><i class="fa fa-chevron-right arrow1"></i> Automobiles</button></a>
                                         <ul class="sub-menu">
-                                            <li><button type="button" class="btn btn-primary btn-block">Motorcylces</button></li>
-                                            <li><button type="button" class="btn btn-primary btn-block">Cars</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Motorcycles</button></li>
+                                            <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Cars</button></li>
                                         </ul>
                                     </li>
                                 </ul>
-                                <li><a href="#"><button type="button" class="btn btn-default btn-block">Seasonal</button></a>
+                                <li><a href="#"><button type="button" class="btn btn-block inner1">Seasonal</button></a>
                                     <ul class="sub-menu">
-                                        <li><a href="#"><button type="button" class="btn btn-warning btn-block">Spring</button></a>
+                                        <li><a href="#"><button type="button" class="btn btn-block inner2"><i class="fa fa-chevron-right arrow1"></i> Spring</button></a>
                                             <ul class="sub-menu">
-                                                <li><button type="button" class="btn btn-primary btn-block">Berry Picking</button></li>
-                                                <li><button type="button" class="btn btn-primary btn-block">Garden Tours</button></li>
+                                                <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Berry Picking</button></li>
+                                                <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Garden Tours</button></li>
                                             </ul>
                                         </li>
-                                        <li><a href="#"><button type="button" class="btn btn-warning btn-block">Winter</button></a>
+                                        <li><a href="#"><button type="button" class="btn btn-block inner2"><i class="fa fa-chevron-right arrow1"></i> Winter</button></a>
                                             <ul class="sub-menu">
-                                                <li><button type="button" class="btn btn-primary btn-block">Sleigh Rides</button></li>
-                                                <li><button type="button" class="btn btn-primary btn-block">Religious</button></li>
-                                                <li><button type="button" class="btn btn-primary btn-block">Carolling</button></li>
+                                                <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Sleigh Rides</button></li>
+                                                <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Religious</button></li>
+                                                <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Carolling</button></li>
                                             </ul>
                                         </li>
-                                        <li><a href="#"><button type="button" class="btn btn-warning btn-block">Summer</button></a>
+                                        <li><a href="#"><button type="button" class="btn btn-block inner2"><i class="fa fa-chevron-right arrow1"></i> Summer</button></a>
                                             <ul class="sub-menu">
-                                                <li><button type="button" class="btn btn-primary btn-block">Camps</button></li>
-                                                <li><button type="button" class="btn btn-primary btn-block">Fesitvals</button></li>
-                                                <li><button type="button" class="btn btn-primary btn-block">Egg Hunts</button></li>
+                                                <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Camps</button></li>
+                                                <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Fesitvals</button></li>
+                                                <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Egg Hunts</button></li>
                                             </ul>
                                         </li>
-                                        <li><a href="#"><button type="button" class="btn btn-warning btn-block">Autumn</button></a>
+                                        <li><a href="#"><button type="button" class="btn btn-block inner2"><i class="fa fa-chevron-right arrow1"></i> Autumn</button></a>
                                             <ul class="sub-menu">
-                                                <li><button type="button" class="btn btn-primary btn-block">Hay Rides</button></li>
-                                                <li><button type="button" class="btn btn-primary btn-block">Pumpkin Picking</button></li>
-                                                <li><button type="button" class="btn btn-primary btn-block">Corn Maze</button></li>
-                                                <li><button type="button" class="btn btn-primary btn-block">Haunted Houses</button></li>
+                                                <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Hay Rides</button></li>
+                                                <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Pumpkin Picking</button></li>
+                                                <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Corn Maze</button></li>
+                                                <li><button type="button" class="btn btn-block inner3"><i class="fa fa-chevron-right arrow1"></i><i class="fa fa-chevron-right arrow2"></i> Haunted Houses</button></li>
                                             </ul>
                                         </li>
                                     </ul>
@@ -404,6 +359,8 @@
             function () {
                 var checkElement = $(this).next();
                 if ((checkElement.is('ul')) && (checkElement.is(':visible'))) {
+                    $('#menu ul:visible').not(checkElement.parentsUntil('#menu')).slideUp('normal');
+                    checkElement.slideUp('normal');
                     return false;
                 }
                 if ((checkElement.is('ul')) && (!checkElement.is(':visible'))) {

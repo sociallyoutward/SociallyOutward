@@ -1,0 +1,55 @@
+ 
+ /* Accordian Styles */
+
+body{
+    color: #515151;
+}
+
+#menu{
+    margin-left: -5px;
+}
+
+ul{
+    list-style: none;
+}
+
+.category{
+    width: 95%;
+    background-color: #ccc;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.btn{
+    text-align: left;
+    padding-left: 10px;
+    border-radius: 0;
+    border: 1px solid #ccc;
+}
+
+.inner1{
+    background-color: #afe9c6;
+}
+
+.inner2{
+    background-color: #E2F7EB;
+    color: black;
+}
+
+.inner3{
+    background-color: white;
+    color: black;
+}
+
+a:link{
+    color: #515151;
+    text-decoration: none;
+}
+
+.arrow1{
+    color: #7fe9a9;
+}
+
+.arrow2{
+    color: #ccc;
+}
