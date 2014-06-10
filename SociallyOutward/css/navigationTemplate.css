@@ -58,18 +58,21 @@ time, mark, audio, video {
 }
 
 .spaceUnder{
-	margin-bottom:10px;
+    margin-bottom:10px;
 }
 
 #name{
-	font-size: 1.2em;
-	margin-bottom: 10px;
+    font-size: 1.3em;
+    font-weight: 100;
+    margin-bottom: 10px;
+    color: white;
+    margin-top: -20px;
 
 }
 
 #content{
-	float:left;
-	width:100%;
+    float:left;
+    width:100%;
 }
 
 .arrow {
@@ -101,7 +104,7 @@ time, mark, audio, video {
 #toggleSide {
   background: #BACBED;
   width: 45px;
-  height: 470px;
+  height: 100%;
   position: fixed;
   padding-top: 80px;
   padding-left: 20px;
@@ -109,7 +112,6 @@ time, mark, audio, video {
   -webkit-transition: width 0.2s linear;
   -moz-transition: width 0.2s linear;
   transition: width 0.2s linear;
-  border-bottom-right-radius: 4px;
   z-index: 500;
 }
 
@@ -125,12 +127,11 @@ time, mark, audio, video {
 
 #absolute {
   background: #BACBED;
-  height: 475px;
+  height: 100%;
   position: fixed;
   padding-top: 80px;
   padding-left: 20px;
-  border-bottom-right-radius: 4px;
-  width: 245px; }
+  width: 250px; }
 
 /* Bootstrap Nav */
 .navbar-default{

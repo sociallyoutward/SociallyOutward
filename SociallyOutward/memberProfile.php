@@ -118,10 +118,14 @@ require 'fbconfig.php';
 	    </div><!-- end toggleSide -->
 	    
 	    <div id='content' class='row'>
-		<div id='can'>
-		    <canvas width='500px' height='500px' id='myCanvas'></canvas>
+		<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+		    <div id='can'>
+			<canvas width='500px' height='500px' id='myCanvas'></canvas>
+		    </div>
 		</div>
-		<canvas width='100px' height='500px' id='navCanvas'></canvas>
+		<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+		    <canvas width='100px' height='500px' id='navCanvas'></canvas>
+		</div>
 	    </div> <!-- end #content -->
 	    
 	    <div id='user' hidden='true'><?php  print_r($_COOKIE['user']); ?></div>

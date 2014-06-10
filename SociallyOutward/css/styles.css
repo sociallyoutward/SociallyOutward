@@ -14,6 +14,7 @@ body{
 #content{
     margin-top: 80px;
     padding-left: 85px;
+    display: block;
 }
 
 a:active,a:focus {

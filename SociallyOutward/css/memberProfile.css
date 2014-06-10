@@ -8,6 +8,7 @@
 #navCanvas{
 	float:right;
 	display: block;
+	margin-bottom: 15px;
 }
 
 #addInterestMenu{

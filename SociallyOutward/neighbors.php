@@ -208,9 +208,10 @@ require 'fbconfig.php';
 	    <script>
 		var friendCube,
 		    images = [
-			'<img src="assets/monkey.jpg" height="180px"/>',
-			'Matching Interests',
-			'Link to their profile web'
+			'<img src="assets/monkey.jpg">',
+			'matching interests',
+			'Link to their profile web',
+			'recent activity'
 		    ];
 		document.addEventListener('DOMContentLoaded', function(){
 		    friendCube = new HexaFlip(document.getElementById('cube'), {set: images},{
