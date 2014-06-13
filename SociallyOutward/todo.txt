@@ -1,6 +1,15 @@
 TO DO:
 
+Ken
 1.
 2.
 3.
 4.
+
+Margo
+1. Make sure all links work
+2. Make sure FB prof pic is on all pages
+3. Rotating cube
+4. Take off week # on calendar
+5. Animate nav bar
+6. Work on design for promo feed, bus. name on bottom
