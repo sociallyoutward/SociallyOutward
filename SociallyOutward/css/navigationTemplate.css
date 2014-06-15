@@ -58,21 +58,18 @@ time, mark, audio, video {
 }
 
 .spaceUnder{
-    margin-bottom:10px;
+	margin-bottom:10px;
 }
 
 #name{
-    font-size: 1.3em;
-    font-weight: 100;
-    margin-bottom: 10px;
-    color: white;
-    margin-top: -20px;
+	font-size: 1.2em;
+	margin-bottom: 10px;
 
 }
 
 #content{
-    float:left;
-    width:100%;
+	float:left;
+	width:100%;
 }
 
 .arrow {
@@ -104,7 +101,7 @@ time, mark, audio, video {
 #toggleSide {
   background: #BACBED;
   width: 45px;
-  height: 100%;
+  height: 470px;
   position: fixed;
   padding-top: 80px;
   padding-left: 20px;
@@ -112,8 +109,18 @@ time, mark, audio, video {
   -webkit-transition: width 0.2s linear;
   -moz-transition: width 0.2s linear;
   transition: width 0.2s linear;
+  border-bottom-right-radius: 4px;
   z-index: 500;
+  opacity: .9;
 }
+
+/*
+-webkit-filter: blur(2px);
+-moz-filter   : blur(2px);
+-ms-filter    : blur(2px);
+-o-filter     : blur(2px);
+filter        : blur(2px);
+*/
 
 #toggleSide:hover{
     width: 240px;
@@ -127,11 +134,13 @@ time, mark, audio, video {
 
 #absolute {
   background: #BACBED;
-  height: 100%;
+  height: 475px;
   position: fixed;
   padding-top: 80px;
   padding-left: 20px;
-  width: 250px; }
+  border-bottom-right-radius: 4px;
+  width: 245px;
+}
 
 /* Bootstrap Nav */
 .navbar-default{
@@ -182,4 +191,22 @@ time, mark, audio, video {
     margin-top: 0;
     border-top-right-radius: 4px;
     border-top-left-radius: 4px;
+}
+
+.open > .dropdown-menu {
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);  
+  opacity:1;
+}
+  
+.dropdown-menu {
+  opacity:.3;
+  -webkit-transform-origin: top;
+  transform-origin: top;
+  -webkit-animation-fill-mode: forwards;  
+  animation-fill-mode: forwards; 
+  -webkit-transform: scale(1, 0);
+  display: block; 
+  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
 }
