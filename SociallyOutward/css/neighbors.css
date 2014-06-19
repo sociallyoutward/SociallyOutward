@@ -2,21 +2,19 @@
 /*  Friends and Neighbors Profile */
 
 .profileBox{
-    height: 328px;
-    width: 290px;
+    height: 242px;
+    width: 200px;
     margin-bottom: 5px;
     margin-right: 5px;
     display: inline-block;
-    border-radius: 5px;
-    border: solid 2px #ccc;
 }
 
 .boxContent{
-    height: 286px;
+    height: 200px;
 }
 
 .front img{
-    height: 286px;
+    height: 200px;
     margin: auto;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -24,20 +22,18 @@
 
 .boxFooterFriend{
     height: 40px;
-    background-color: #afe9c6;
+    background-color: #e2e2e2;
     padding: 10px 5px 5px 15px;
-    border-top: solid 2px #ccc;
-    border-bottom: solid 2px #ccc;
+    border: solid 2px #ccc;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
 
 .boxFooterNeighbor{
     height: 40px;
-    background-color: #ffeeaa;
+    background-color: #e2e2e2;
     padding: 10px 5px 5px 15px;
-    border-top: solid 2px #ccc;
-    border-bottom: solid 2px #ccc;
+    border: solid 2px #ccc;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
@@ -45,6 +41,11 @@
 body {
  background: #ccc;   
 }
+
+#cube{
+    border: solid 2px #ccc;
+}
+
 .flip {
   -webkit-perspective: 800;
     position: relative;
