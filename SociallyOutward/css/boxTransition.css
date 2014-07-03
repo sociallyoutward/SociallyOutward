@@ -225,7 +225,8 @@ section.bl-expand .bl-box {
 }
 
 .no-touch section:not(.bl-expand) .bl-box:hover{
-	background-color: #;
+	color: white;
+	background-color: #BACBED;
 }
 
 .bl-content,
