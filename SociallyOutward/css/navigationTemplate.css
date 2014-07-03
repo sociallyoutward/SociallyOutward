@@ -109,7 +109,7 @@ time, mark, audio, video {
   -webkit-transition: width 0.2s linear;
   -moz-transition: width 0.2s linear;
   transition: width 0.2s linear;
-  z-index: 500;
+  z-index: 600;
 }
 
 /*
@@ -122,6 +122,7 @@ filter        : blur(2px);
 
 #toggleSide:hover{
     width: 240px;
+    z-index: 600;
 }
  
 #sideNav {
@@ -198,22 +199,15 @@ filter        : blur(2px);
     width: auto;
 }
 
-.open > .dropdown-menu {
-  -webkit-transform: scale(1, 1);
-  transform: scale(1, 1);  
-  opacity:1;
+.open > .navbar-nav{
+  height:130px;
 }
   
-.dropdown-menu {
-  opacity:.3;
-  -webkit-transform-origin: top;
-  transform-origin: top;
-  -webkit-animation-fill-mode: forwards;  
-  animation-fill-mode: forwards; 
-  -webkit-transform: scale(1, 0);
+.navbar-nav {
+  height:0px;
   display: block; 
-  transition: all 0.2s linear;
-  -webkit-transition: all 0.2s linear;
+  transition: height 0.5s linear;
+  -webkit-transition: height 0.5s linear;
 }
 
 .navbar .navbar-nav>.active>a:hover,
@@ -226,4 +220,18 @@ filter        : blur(2px);
 .navbar .navbar-brand:hover {
     -webkit-transform: scale(1.05,1.05);
     -moz-transform:scale(1.05,1.05);
+}
+
+@font-face {
+    font-family: 'grandhotel';
+    src: url('fonts/GrandHotel-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#logo{
+    display: inline;
+    color: white;
+    font-size: 45px;
+    font-family: 'grandhotel';
 }

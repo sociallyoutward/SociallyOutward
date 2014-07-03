@@ -1,0 +1,54 @@
+div.row{
+	height:99%;
+	/*Stop collapsing Right navbar on screen resize*/
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy...) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* New - Chrome */
+    white-space:nowrap;        /*Better for Chrome*/
+    display: flex;
+}
+
+/*div.col-md-3*/
+ul#menu{
+	float:right;
+	height:100%;
+	max-height:2000px;
+	min-height:650px;
+	width:15%;
+	position:fixed;
+	top: 70px;
+	left:85%;
+	background-color: #BACBED;
+	margin:0px;
+	padding:0px;
+	box-shadow:-5px 10px 12px 0px #969696;
+	/*border-bottom-left-radius:5px;
+	
+	/*Normal and mobile div scrolling*/
+	overflow:auto;
+	overflow-y:auto;
+	overflow-x:auto;
+	-webkit-overflow-scrolling:touch;
+}
+
+div.col-md-9{
+	height:290%;
+	width:75%;
+	margin:0px;
+}
+
+.container{
+	height:30%;
+	width:90%;
+}
+
+div#googleMap {
+	position:relative;
+	left:-10px;
+}
+
+#toggleSide{
+	box-shadow:5px 5px 12px 0px;
+}
+

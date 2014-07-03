@@ -1,9 +1,32 @@
 
 /* Socially Outward Universal Styles */
 
+@font-face {
+    font-family: 'capsuula';
+    src: url('fonts/Capsuula.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body{
     background-color: white;
-    font-family: Arial, sans-serif;
+    font-family: 'capsuula', Tahoma, Arial, sans-serif;
+    font-size: 20px;
+}
+
+@font-face {
+    font-family: 'grandhotel';
+    src: url('fonts/GrandHotel-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#logo{
+    display: inline;
+    color: white;
+    font-size: 4em;
+    font-family: 'grandhotel';
+    text-align: center;
 }
 
 .container{
@@ -12,6 +35,7 @@ body{
 }
 
 #content{
+	
     margin-top: 80px;
     padding-left: 85px;
     display: block;
@@ -24,3 +48,43 @@ a:active,a:focus {
 .modal-dialog{
     left: 0;
 }
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+    color: #7094DB;
+    border: 1px solid #7094DB;
+    border-bottom-color: transparent;
+}
+
+.nav-tabs{
+    border-bottom-color: #7094DB;
+}
+
+.nav-tabs>li>a {
+    color: #555;
+    margin-right: 2px;
+    line-height: 1.42857143;
+    border: 1px solid transparent;
+    border-radius: 2px 2px 0 0;
+    text-align: center;
+    margin-left: 5px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-bottom-color: #7094DB;
+    width: 108px;
+}
+
+.nav-tabs>li>a:hover {
+    color: #7094DB;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-bottom-color: #7094DB;
+}
+
+.page-header{
+    font-size: 30px;
+}
+
+div#toggleSide, div#absolute{
+    box-shadow: 5px 10px 12px 0px #969696;
+}
+

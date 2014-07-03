@@ -23,17 +23,21 @@ require 'fbconfig.php';
     <link href='css/memberProfile.css' type='text/css' rel='stylesheet'>
     <link href='css/navigationTemplate.css' type='text/css' rel='stylesheet'>
     <link href='css/styles.css' type='text/css' rel='stylesheet'>
+    <link href='css/webPosition.css' type='text/css' rel='stylesheet'>
+    <link href="css/boxTransition.css" type="text/css" rel="stylesheet"/>
     
     <link rel='icon' href='assets/logo.png'>
     
-    <script src=' http://code.createjs.com/createjs-2013.02.12.min.js'></script>
-    <script type='text/javascript' src='js/showMenu.js'></script>
+    <script src='http://code.createjs.com/createjs-2013.12.12.min.js'></script>
     <script src='http://code.createjs.com/createjs-2013.02.12.min.js'></script>
-    <script src='/js/bubbles/dbinitialize2.js'></script>
-    <script src='/js/bubbles/resize.js'></script>
-    <script src='/js/bubbles/dbbubble.js'></script>
-    <script src='/js/clearInterests.js'></script>
-    <script src='/js/sideMenu.js'></script>
+    
+    <script src='js/bubbles/dbinitialize2.js'></script>
+    <script src='js/bubbles/resize.js'></script>
+    <script src='js/bubbles/dbbubble.js'></script>
+    <script src='js/clearInterests.js'></script>
+    <script type='text/javascript' src='js/showMenu.js'></script>
+    <script src='js/sideMenu.js'></script>
+    <script src="js/modernizr.custom.js"></script>
 </head>
 
 <body>
@@ -85,8 +89,8 @@ require 'fbconfig.php';
 			<img id='profpic' class='spaceUnder pushover' src='https://graph.facebook.com/<?php echo $user; ?>/picture?height=350&width=350'>
 			<ul class='po'>
 			    <li class='spaceUnder'><a href='memberprofile.php'>Home</a></li>
-			    <li class='spaceUnder'><a href='#'>Messages</a></li>
-			    <li class='spaceUnder'><a href='#'>Settings</a></li>
+			    <li class='spaceUnder'><a href='messages.php'>Messages</a></li>
+			    <li class='spaceUnder'><a href='settings.php'>Settings</a></li>
 			    <li class='spaceUnder'><a href='chooseInterests.php'>Choose Interests</a></li>
 			    <li class='spaceUnder'><a href='<?php echo $logoutUrl; ?>'>Logout</a></li>
 			</ul>
@@ -107,8 +111,8 @@ require 'fbconfig.php';
 			<img id='profpic' class='spaceUnder pushover' src='https://graph.facebook.com/<?php echo $user; ?>/picture?height=350&width=350'>
 			<ul class='po'>
 			    <li class='spaceUnder'><a href='memberprofile.php'>Home</a></li>
-			    <li class='spaceUnder'><a href='#'>Messages</a></li>
-			    <li class='spaceUnder'><a href='#'>Settings</a></li>
+			    <li class='spaceUnder'><a href='messages.php'>Messages</a></li>
+			    <li class='spaceUnder'><a href='settings.php'>Settings</a></li>
 			    <li class='spaceUnder'><a href='chooseInterests.php'>Choose Interests</a></li>
 			    <li class='spaceUnder'><a href='<?php echo $logoutUrl; ?>'>Logout</a></li>
 			</ul>
@@ -118,21 +122,84 @@ require 'fbconfig.php';
 	    </div><!-- end toggleSide -->
 	    
 	    <div id='content' class='row'>
-		<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
-		    <div id='can'>
-			<canvas width='500px' height='500px' id='myCanvas'></canvas>
-		    </div>
-		</div>
-		<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-		    <canvas width='100px' height='500px' id='navCanvas'></canvas>
+		<div id="bl-main" class="bl-main">
+		    <section>
+			<div class="bl-box">
+			    <h2 class="bl-icon bl-icon-about">Interest Web</h2>
+			    <img src="assets/web-icon.png">
+			</div>
+			<div class="bl-content">
+			    <h2>Interest Web</h2>
+			    <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+				<div id='can'>
+				    <canvas width='460px' height='500px' id='myCanvas'></canvas>
+				</div>
+			    </div>
+			    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+				    <canvas width='230px' height='580px' id='navCanvas'></canvas>
+			    </div>
+			</div>
+			<span class="bl-icon bl-icon-close">X</span>
+		    </section>
+		    <section id="bl-work-section">
+			<div class="bl-box">
+			    <h2 class="bl-icon bl-icon-works">Socially Outward Status</h2>
+			    <img src="assets/vs-icon.png">
+			</div>
+			<div class="bl-content">
+			    <h2>You vs. Friend</h2>
+			    <p>Beginner</p>
+			    <p>Expert</p>
+			</div>
+			<span class="bl-icon bl-icon-close">X</span>
+		    </section>
+		    <section>
+			<div class="bl-box">
+			    <h2 class="bl-icon bl-icon-blog">Recent Activity</h2>
+			    <img src="assets/feed-icon.png">
+			</div>
+			<div class="bl-content">
+			    <h2>What's the 411 in CH</h2>
+			    <div>
+				<h3>Random Thing</h3>
+				<p>extra deets</p>
+			        <hr />
+			    </div>
+			    <div>
+				<h3>Random Thing</h3>
+				<p>extra deets</p>
+				<hr />
+			    </div>
+			</div>
+			<span class="bl-icon bl-icon-close">X</span>
+		    </section>
+		    <section>
+			<div class="bl-box">
+			    <h2 class="bl-icon bl-icon-contact">What's Hot Nearby</h2>
+			    <img src="assets/explore-icon.png">
+			</div>
+			<div class="bl-content">
+			    <h2>Cool stuff in Raleigh</h2>
+			    <p>blah blah blah</p>
+			</div>
+			<span class="bl-icon bl-icon-close">X</span>
+		    </section>
 		</div>
 	    </div> <!-- end #content -->
 	    
-	    <div id='user' hidden='true'><?php  print_r($_COOKIE['user']); ?></div>
+	    <div id='user' hidden='false'><?php  print_r($_COOKIE['user']); ?></div>
 	    
 	</div><!-- end .row -->
     </div><!-- end .container-->
 
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/boxTransition.js"></script>
+    <script>
+	$(function() {
+	    Boxlayout.init();
+	});
+    </script>
 
 </body>
 </html>
