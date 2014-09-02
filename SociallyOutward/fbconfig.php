@@ -7,7 +7,7 @@ $facebook = new Facebook(array(
   'secret' => 'f5a4fef7e73a9ffb77f20a2692d50ec3',  // Facebook App Secret
   'cookie' => true,	
 ));
-$user = $facebook->getUser();
+$user = $facebook->getUser(); //get current facebook user
 if ($user) {
   try {
     $user_profile = $facebook->api('/me');

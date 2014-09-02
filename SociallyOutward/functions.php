@@ -1,5 +1,5 @@
 <?php
-
+//function to check whether or not someone logging in through facebook is already a user
 function checkuser($fuid,$funame,$ffname,$femail,$connection){
     		
     		$sql = "select * from Users where Fuid='".$fuid."'";
